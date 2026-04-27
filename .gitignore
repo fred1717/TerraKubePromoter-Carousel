@@ -1,0 +1,31 @@
+# ============================================================
+# .gitignore — TerraKubePromoter-Carousel
+# ============================================================
+
+
+# ----- Private working notes -----
+journal.md
+
+
+# ----- Generated outputs -----
+output/
+*.pdf
+
+
+# ----- IDE -----
+.idea/
+*.iml
+
+
+# ----- Python virtual environment -----
+venv/
+
+
+# ----- macOS -----
+.DS_Store
+
+
+# ----- Editor backups -----
+*.swp
+*.swo
+*~

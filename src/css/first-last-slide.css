@@ -1,0 +1,114 @@
+/* ============================================================
+   first-last-slide.css
+   Stylesheet for the cover (slide 1) and the closing (slide 13).
+   Dark navy background with white title and amber accents.
+   ============================================================ */
+
+/* ---- Page setup: 980 x 1232 portrait, 4:5 ratio ---- */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2C3E50;
+  font-family: Calibri, "Segoe UI", system-ui, Arial, sans-serif;
+}
+
+.slide {
+  position: relative;
+  width: 980px;
+  height: 1232px;
+  background: #122040;
+  color: #FFFFFF;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ---- Diamond decorations (rotated squares) ---- */
+.diamond {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  background: rgba(27, 58, 92, 0.10);
+  border: 1px solid rgba(27, 58, 92, 0.50);
+  transform: rotate(45deg);
+}
+
+.diamond-top-left {
+  top: -46px;
+  left: -36px;
+}
+
+.diamond-bottom-right {
+  bottom: -46px;
+  right: -36px;
+  border-color: rgba(27, 58, 92, 0.40);
+}
+
+/* ---- @MalikHamdane handle (top-left, amber, aligned with URL pill) ---- */
+.handle {
+  position: absolute;
+  top: 26px;
+  left: 31px;
+  font-size: 14.7px;
+  font-weight: 700;
+  color: #D4872E;
+  letter-spacing: 0.2px;
+}
+
+/* ---- Title block ---- */
+.title {
+  position: absolute;
+  top: 380px;
+  left: 52px;
+  right: 52px;
+  font-size: 64px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* ---- Tagline block (3 lines under the title) ---- */
+.taglines {
+  position: absolute;
+  top: 540px;
+  left: 52px;
+  right: 52px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #FFFFFF;
+}
+
+.taglines li {
+  font-size: 24px;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+/* ---- Subtitle (italic, muted, sits below the taglines) ---- */
+.subtitle {
+  position: absolute;
+  top: 750px;
+  left: 52px;
+  right: 52px;
+  font-size: 20px;
+  font-style: italic;
+  color: #D4872E;
+  margin: 0;
+}
+
+/* ---- URL pill (bottom-left, navy fill, amber border, amber text) ---- */
+.url-pill {
+  position: absolute;
+  bottom: 28px;
+  left: 31px;
+  padding: 8px 24px;
+  border: 1.7px solid #D4872E;
+  border-radius: 26px;
+  background: #122040;
+  color: #D4872E;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}

@@ -1,0 +1,138 @@
+/* ============================================================
+   middle-slides.css
+   Stylesheet for content slides (slides 2 to 12).
+   Light grey background, navy heading, amber URL pill.
+   ============================================================ */
+
+/* ---- Page setup ---- */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #2C3E50;
+  font-family: Calibri, "Segoe UI", system-ui, Arial, sans-serif;
+}
+
+.slide {
+  position: relative;
+  width: 980px;
+  height: 1232px;
+  background: #F2F4F8;
+  color: #2C3E50;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ---- Diamond decoration (single diamond, bottom-right) ---- */
+.diamond {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  background: rgba(18, 32, 64, 0.04);
+  border: 1px solid rgba(18, 32, 64, 0.18);
+  transform: rotate(45deg);
+}
+
+.diamond-bottom-right {
+  bottom: -46px;
+  right: -36px;
+}
+
+/* ---- @MalikHamdane handle (top-left, amber, aligned with URL pill) ---- */
+.handle {
+  position: absolute;
+  top: 26px;
+  left: 31px;
+  font-size: 14.7px;
+  font-weight: 700;
+  color: #D4872E;
+  letter-spacing: 0.2px;
+}
+
+/* ---- Slide heading (top of slide, large navy bold) ---- */
+.heading {
+  position: absolute;
+  top: 96px;
+  left: 52px;
+  right: 52px;
+  font-size: 56px;
+  font-weight: 700;
+  color: #122040;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* ---- Body container: holds intro, command list, and consequence text ---- */
+.body {
+  position: absolute;
+  top: 230px;
+  left: 52px;
+  right: 52px;
+  color: #2C3E50;
+}
+
+.intro {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 28px 0;
+}
+
+/* ---- Command list (4 monospaced lines in light boxes) ---- */
+.commands {
+  list-style: none;
+  margin: 0 0 36px 0;
+  padding: 0 0 0 36px;
+}
+
+.commands li {
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 10px 22px;
+  margin-bottom: 8px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 22px;
+  color: #122040;
+}
+
+/* ---- Consequence lines (dark navy body text) ---- */
+.consequences p {
+  font-size: 19px;
+  line-height: 1.5;
+  margin: 0 0 6px 0;
+}
+
+/* ---- Replacement callout (bold, dark navy) ---- */
+.callout {
+  font-size: 22px;
+  font-weight: 700;
+  color: #122040;
+  margin: 36px 0 24px 0;
+}
+
+/* ---- Closing italic block (muted, smaller text) ---- */
+.closing {
+  font-size: 18px;
+  font-style: italic;
+  color: #2C3E50;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.closing p {
+  margin: 0 0 4px 0;
+}
+
+/* ---- URL pill (bottom-left, navy fill, amber border, amber text) ---- */
+.url-pill {
+  position: absolute;
+  bottom: 28px;
+  left: 31px;
+  padding: 8px 24px;
+  border: 1.7px solid #D4872E;
+  border-radius: 26px;
+  background: #122040;
+  color: #D4872E;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: nowrap;
+}

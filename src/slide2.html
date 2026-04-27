@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>TerraKubePromoter — Slide 2</title>
+  <link rel="stylesheet" href="css/middle-slides.css">
+</head>
+<body>
+
+  <div class="slide">
+
+    <div class="diamond diamond-bottom-right"></div>
+
+    <div class="handle">@MalikHamdane</div>
+
+    <h1 class="heading">The Challenge</h1>
+
+    <div class="body">
+
+      <p class="intro">Running a Kubernetes deployment manually means stitching together 4 unrelated steps:</p>
+
+      <ul class="commands">
+        <li>docker build &amp; push</li>
+        <li>kubectl set image</li>
+        <li>kubectl rollout</li>
+        <li>kubectl get pods</li>
+      </ul>
+
+      <div class="consequences">
+        <p>A skipped step leaves the cluster out of sync with Git.</p>
+        <p>A direct kubectl edit drifts the cluster from its declared state with no audit trail.</p>
+      </div>
+
+      <p class="callout">TerraKubePromoter replaces all of it with a single Git commit.</p>
+
+      <div class="closing">
+        <p>ArgoCD watches Git and reconciles every 3 minutes.</p>
+        <p>Manual changes are reverted; deleted resources are restored.</p>
+      </div>
+
+    </div>
+
+    <div class="url-pill">github.com/fred1717/TerraKubePromoter</div>
+
+  </div>
+
+</body>
+</html>
