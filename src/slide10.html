@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>TerraKubePromoter — Slide 10</title>
+  <link rel="stylesheet" href="css/middle-slides.css">
+</head>
+<body>
+
+  <div class="slide">
+
+    <div class="diamond diamond-bottom-right"></div>
+
+    <div class="handle">@MalikHamdane</div>
+
+    <h1 class="heading">The Cost-Tagging Failures (1 day)</h1>
+
+    <div class="body">
+
+      <p class="intro">Cost Explorer can only break down costs by tags that exist on resources at the time the cost is incurred.</p>
+
+      <p class="intro">Tags applied late do not backfill historical cost data.</p>
+
+      <p class="intro">The pattern that cost a day:</p>
+
+      <ul class="commands">
+        <li>default_tags on the AWS provider does not include the Name tag</li>
+        <li>Resources missing Name appeared as "(no resource)" in the Tag Editor</li>
+        <li>By the time it was noticed, days of cost had been incurred without the project tag</li>
+        <li>Those costs are permanently invisible to per-project Cost Explorer reports</li>
+      </ul>
+
+      <p class="callout">The fix runs forward, not backwards.</p>
+
+      <div class="closing">
+        <p>Cost tagging is a project-start concern, not a project-end concern.</p>
+        <p>The opportunity to tag a resource passes the moment it is created.</p>
+      </div>
+
+    </div>
+
+    <div class="url-pill">github.com/fred1717/TerraKubePromoter</div>
+
+  </div>
+
+</body>
+</html>

@@ -4,7 +4,7 @@
    Dark navy background with white title and amber accents.
    ============================================================ */
 
-/* ---- Page setup: 980 x 1232 portrait, 4:5 ratio ---- */
+/* ---- Page setup: 1080 x 1350 portrait, 4:5 ratio ---- */
 html, body {
   margin: 0;
   padding: 0;
@@ -14,8 +14,8 @@ html, body {
 
 .slide {
   position: relative;
-  width: 980px;
-  height: 1232px;
+  width: 1080px;
+  height: 1350px;
   background: #122040;
   color: #FFFFFF;
   overflow: hidden;
@@ -26,30 +26,30 @@ html, body {
 /* ---- Diamond decorations (rotated squares) ---- */
 .diamond {
   position: absolute;
-  width: 126px;
-  height: 126px;
+  width: 139px;
+  height: 139px;
   background: rgba(27, 58, 92, 0.10);
   border: 1px solid rgba(27, 58, 92, 0.50);
   transform: rotate(45deg);
 }
 
 .diamond-top-left {
-  top: -46px;
-  left: -36px;
+  top: -51px;
+  left: -40px;
 }
 
 .diamond-bottom-right {
-  bottom: -46px;
-  right: -36px;
+  bottom: -51px;
+  right: -40px;
   border-color: rgba(27, 58, 92, 0.40);
 }
 
 /* ---- @MalikHamdane handle (top-left, amber, aligned with URL pill) ---- */
 .handle {
   position: absolute;
-  top: 26px;
-  left: 31px;
-  font-size: 14.7px;
+  top: 29px;
+  left: 34px;
+  font-size: 16.2px;
   font-weight: 700;
   color: #D4872E;
   letter-spacing: 0.2px;
@@ -58,10 +58,10 @@ html, body {
 /* ---- Title block ---- */
 .title {
   position: absolute;
-  top: 380px;
-  left: 52px;
-  right: 52px;
-  font-size: 64px;
+  top: 230px;
+  left: 57px;
+  right: 57px;
+  font-size: 70px;
   font-weight: 700;
   color: #FFFFFF;
   line-height: 1.1;
@@ -71,9 +71,9 @@ html, body {
 /* ---- Tagline block (3 lines under the title) ---- */
 .taglines {
   position: absolute;
-  top: 540px;
-  left: 52px;
-  right: 52px;
+  top: 500px;
+  left: 57px;
+  right: 57px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -81,18 +81,18 @@ html, body {
 }
 
 .taglines li {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.6;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 /* ---- Subtitle (italic, muted, sits below the taglines) ---- */
 .subtitle {
   position: absolute;
-  top: 750px;
-  left: 52px;
-  right: 52px;
-  font-size: 20px;
+  top: 850px;
+  left: 57px;
+  right: 57px;
+  font-size: 22px;
   font-style: italic;
   color: #D4872E;
   margin: 0;
@@ -101,14 +101,14 @@ html, body {
 /* ---- URL pill (bottom-left, navy fill, amber border, amber text) ---- */
 .url-pill {
   position: absolute;
-  bottom: 28px;
-  left: 31px;
-  padding: 8px 24px;
+  bottom: 31px;
+  left: 34px;
+  padding: 9px 26px;
   border: 1.7px solid #D4872E;
-  border-radius: 26px;
+  border-radius: 29px;
   background: #122040;
   color: #D4872E;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   white-space: nowrap;
 }

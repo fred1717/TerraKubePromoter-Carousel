@@ -16,7 +16,7 @@ html, body {
   position: relative;
   width: 1080px;
   height: 1350px;
-  background: #F2F4F8;
+  background: #ceced6;
   color: #2C3E50;
   overflow: hidden;
   margin: 0 auto;
@@ -45,7 +45,7 @@ html, body {
   left: 34px;
   font-size: 16.2px;
   font-weight: 700;
-  color: #D4872E;
+  color: #bc6c0e;
   letter-spacing: 0.2px;
 }
 
@@ -67,7 +67,7 @@ html, body {
 /* ---- Body container: holds intro, command list, and consequence text ---- */
 .body {
   position: absolute;
-  top: 253px;
+  top: 230px;
   left: 57px;
   right: 57px;
   color: #2C3E50;
@@ -76,31 +76,35 @@ html, body {
 .intro {
   font-size: 22px;
   line-height: 1.5;
-  margin: 0 0 31px 0;
+  margin: 0 0 0 0;
 }
 
 /* ---- Command list (4 monospaced lines in light boxes) ---- */
 .commands {
   list-style: none;
-  margin: 0 0 40px 0;
-  padding: 0 0 0 40px;
+  margin: 0 0 80px 0;
+  padding: 0 0 0 0;
 }
 
 .commands li {
   background: #FFFFFF;
   border-radius: 4px;
   padding: 11px 24px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   font-family: "Consolas", "Courier New", monospace;
-  font-size: 24px;
+  font-size: 18px;
   color: #122040;
 }
 
 /* ---- Consequence lines (dark navy body text) ---- */
+.consequences {
+  margin: 100px 0 20px 0;
+}
+
 .consequences p {
   font-size: 21px;
   line-height: 1.5;
-  margin: 0 0 7px 0;
+  margin: 5px 0 0 0;
 }
 
 /* ---- Replacement callout (bold, dark navy) ---- */
@@ -108,7 +112,7 @@ html, body {
   font-size: 24px;
   font-weight: 700;
   color: #122040;
-  margin: 40px 0 26px 0;
+  margin: 90px 0 10px 0;
 }
 
 /* ---- Closing italic block (muted, smaller text) ---- */
@@ -124,16 +128,26 @@ html, body {
   margin: 0 0 4px 0;
 }
 
+/* ---- Closing line under a diagram (centred, with extra top margin) ---- */
+.diagram-closing {
+  font-size: 20px;
+  font-style: italic;
+  color: #2C3E50;
+  line-height: 1.5;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
 /* ---- URL pill (bottom-left, navy fill, amber border, amber text) ---- */
 .url-pill {
   position: absolute;
   bottom: 31px;
   left: 34px;
   padding: 9px 26px;
-  border: 1.7px solid #D4872E;
+  border: 1.7px solid #bc6c0e;
   border-radius: 29px;
-  background: #2C3E50;
-  color: #D4872E;
+  background: #ceced6;
+  color: #bc6c0e;
   font-size: 18px;
   font-weight: 400;
   white-space: nowrap;

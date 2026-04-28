@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>TerraKubePromoter — Slide 7</title>
+  <link rel="stylesheet" href="css/middle-slides.css">
+</head>
+<body>
+
+  <div class="slide">
+
+    <div class="diamond diamond-bottom-right"></div>
+
+    <div class="handle">@MalikHamdane</div>
+
+    <h1 class="heading">Security Baseline</h1>
+
+    <div class="body">
+
+      <p class="intro">Security is not a layer added on top. Every component carries the constraint at provisioning time.</p>
+
+      <p class="intro">The baseline:</p>
+
+      <ul class="commands">
+        <li>GitHub OIDC federation, no static AWS credentials anywhere</li>
+        <li>3 IAM roles, each scoped to one workflow's needs</li>
+        <li>ECR with immutable tags and SCAN_ON_PUSH</li>
+        <li>Pod Security Standards: restricted on every namespace</li>
+        <li>NetworkPolicy default-deny in every workload namespace</li>
+        <li>S3 backend bucket: versioned, encrypted, public access blocked</li>
+      </ul>
+
+      <p class="callout">Production runs from sha256 digests, not tags.</p>
+
+      <div class="closing">
+        <p>Least privilege is enforced by Terraform, not by convention.</p>
+        <p>Every IAM role's permissions are visible in code and reviewable in pull requests.</p>
+      </div>
+
+    </div>
+
+    <div class="url-pill">github.com/fred1717/TerraKubePromoter</div>
+
+  </div>
+
+</body>
+</html>

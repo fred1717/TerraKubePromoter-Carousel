@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>TerraKubePromoter — Slide 9</title>
+  <link rel="stylesheet" href="css/middle-slides.css">
+</head>
+<body>
+
+  <div class="slide">
+
+    <div class="diamond diamond-bottom-right"></div>
+
+    <div class="handle">@MalikHamdane</div>
+
+    <h1 class="heading">The Real Debugging (2 days)</h1>
+
+    <div class="body">
+
+      <p class="intro">9 days of build time. 2 of them spent debugging.</p>
+
+      <p class="intro">The 3 problems that consumed the time:</p>
+
+      <ul class="commands">
+        <li>ArgoCD UI access required HTTPS on port 443 with the self-signed cert, not server.insecure: "true"</li>
+        <li>Stale ArgoCD sync cache resolved by hard refresh annotation: argocd.argoproj.io/refresh=hard</li>
+        <li>Docker Bake variable overrides via --set app.args.APP_VERSION did not work as documented</li>
+      </ul>
+
+      <p class="callout">Each fix was 1 line of code. Each took hours of investigation.</p>
+
+      <div class="closing">
+        <p>Documentation is rarely wrong, but often incomplete.</p>
+        <p>The shortest fix usually follows the longest read.</p>
+      </div>
+
+    </div>
+
+    <div class="url-pill">github.com/fred1717/TerraKubePromoter</div>
+
+  </div>
+
+</body>
+</html>

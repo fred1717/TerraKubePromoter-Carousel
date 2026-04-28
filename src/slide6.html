@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>TerraKubePromoter — Slide 6</title>
+  <link rel="stylesheet" href="css/middle-slides.css">
+</head>
+<body>
+
+  <div class="slide">
+
+    <div class="diamond diamond-bottom-right"></div>
+
+    <div class="handle">@MalikHamdane</div>
+
+    <h1 class="heading">The Promotion Model</h1>
+
+    <div class="body">
+
+      <p class="intro">Each environment has its own Kustomize overlay.</p>
+      <p class="intro">The same image moves through all 3, but never the same way.</p>
+      <p class="intro">The 3 environments:</p>
+
+      <ul class="commands">
+        <li>dev: app-ci.yml updates the overlay automatically on every push to main</li>
+        <li>staging: promote.yml updates the overlay manually with the dev tag</li>
+        <li>production: promote.yml updates the overlay with the staging digest</li>
+      </ul>
+
+      <p class="callout">Production pins by sha256 digest, not by tag.</p>
+
+      <div class="closing">
+        <p>A digest cannot be re-tagged or replaced silently in ECR.</p>
+        <p>The image that passes staging is the exact image that runs in production.</p>
+      </div>
+
+    </div>
+
+    <div class="url-pill">github.com/fred1717/TerraKubePromoter</div>
+
+  </div>
+
+</body>
+</html>

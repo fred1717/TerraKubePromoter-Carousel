@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>TerraKubePromoter — Slide 5</title>
+  <link rel="stylesheet" href="css/middle-slides.css">
+</head>
+<body>
+
+  <div class="slide">
+
+    <div class="diamond diamond-bottom-right"></div>
+
+    <div class="handle">@MalikHamdane</div>
+
+    <h1 class="heading">The Architecture</h1>
+
+    <div class="body">
+
+      <p class="intro">The infrastructure runs in us-east-1, across 2 availability zones.</p>
+
+      <p class="intro">The components are:</p>
+
+      <ul class="commands">
+        <li>VPC with public and private subnets</li>
+        <li>NAT Gateway for ArgoCD's egress to GitHub</li>
+        <li>VPC interface endpoints for ECR, STS, EKS, CloudWatch Logs</li>
+        <li>VPC gateway endpoint for S3</li>
+        <li>EKS cluster on Kubernetes 1.35, AL2023 node group</li>
+        <li>ECR repository with immutable tags and registry-wide scanning</li>
+        <li>S3 bucket for Terraform state with native locking</li>
+      </ul>
+
+      <p class="callout">3 GitHub Actions workflows drive infrastructure, application, and promotion.</p>
+
+      <div class="closing">
+        <p>The workload is exposed only inside the cluster, via Service ClusterIP.</p>
+        <p>Image pulls go through VPC endpoints, so the nodes never reach the public internet.</p>
+      </div>
+
+    </div>
+
+    <div class="url-pill">github.com/fred1717/TerraKubePromoter</div>
+
+  </div>
+
+</body>
+</html>

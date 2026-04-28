@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>TerraKubePromoter — Slide 8</title>
+  <link rel="stylesheet" href="css/middle-slides.css">
+</head>
+<body>
+
+  <div class="slide">
+
+    <div class="diamond diamond-bottom-right"></div>
+
+    <div class="handle">@MalikHamdane</div>
+
+    <h1 class="heading">The Refactor at v0.6.0</h1>
+
+    <div class="body">
+
+      <p class="intro">The Terraform code shipped through v0.5.0 worked, but the module boundaries were wrong.</p>
+
+      <p class="intro">The original layout had everything in one root module. The blast radius of a single mistake covered the VPC, the EKS cluster, and the workload manifests at once.</p>
+
+      <p class="intro">The refactor split the code into 4 modules:</p>
+
+      <ul class="commands">
+        <li>network: VPC, subnets, NAT Gateway, VPC endpoints</li>
+        <li>cluster: EKS, node group, OIDC provider</li>
+        <li>registry: ECR with lifecycle and scanning</li>
+        <li>bootstrap: ArgoCD Helm release and the app-of-apps Application</li>
+      </ul>
+
+      <p class="callout">Each module is independently destroyable.</p>
+
+      <div class="closing">
+        <p>The refactor was not triggered by self-correction but triggered by user challenge:</p>
+        <p>"It does not look like 'best practice': is it really how the modules should be structured?"</p>
+      </div>
+
+    </div>
+
+    <div class="url-pill">github.com/fred1717/TerraKubePromoter</div>
+
+  </div>
+
+</body>
+</html>
